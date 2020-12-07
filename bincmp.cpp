@@ -86,7 +86,7 @@ VOID Fini(INT32 code, VOID *v)
 
 int main(int argc, char *argv[])
 {
-		const int dir_err = mkdir("dict", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+	const int dir_err = mkdir("dict", S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
         if (-1 == dir_err)
         {
             printf("Error creating directory!n");
