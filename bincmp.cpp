@@ -45,7 +45,7 @@ VOID writeToken(ADDRINT val)
 VOID print_cmp_mem(VOID *ip, UINT64 * addr, ADDRINT value, ADDRINT * addr2) {
 
         ADDRINT value2;
-		PIN_SafeCopy(&value2, addr2, sizeof(ADDRINT));
+	PIN_SafeCopy(&value2, addr2, sizeof(ADDRINT));
         writeToken(value2);
 
 }
